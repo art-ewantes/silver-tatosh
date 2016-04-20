@@ -1,0 +1,29 @@
+{
+  "name": "silver-tatosh",
+  "description": "front-end tools",
+  "main": "gulpfile.js",
+  "authors": [
+    "Art ewantes"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/art-ewantes/silver-tatosh",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "magnific-popup": "^1.1.0",
+    "animated": "^1.0.2",
+    "grid-bootstrap": "*",
+    "font-awesome": "fontawesome#^4.6.1",
+    "html5shiv": "^3.7.3",
+    "bootstrapvalidator": "^0.5.3",
+    "parallax": "paralaxJS#^2.1.3",
+    "respond": "Respond#^1.4.2",
+    "owl.carousel": "owl-carousel2#^2.1.1"
+  }
+}
