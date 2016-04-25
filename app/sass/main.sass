@@ -1,4 +1,559 @@
+@import "bourbon/app/assets/stylesheets/bourbon"
 *
 	margin: 0
 	padding: 0
+
+$main_color: #182932
+$silver: #808689
+$silver_bg: #e9e9e9
+$w: 28px
+$h: 3px
+
+=animation-delay($animation)
+	-webkit-animation-delay: $animation
+	-o-animation-delay: $animation
+	-moz-animation-delay: $animation
+	animation-delay: $animation
+
+=border-radius($border-radius)
+	-webkit-border-radius: $border-radius
+	-o-border-radius: $border-radius
+	-moz-border-radius: $border-radius
+	border-radius: $border-radius
+
+=placeholder ($placeholder) 
+	-webkit-input-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-ms-input-placeholder: $placeholder
+
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition: $transition
+	-o-transition: $transition
+	transition: $transition
+
+body
+	font-family: "OpenSans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+h2, h3, h4, h5
+	font-family: "Arkhir"
+
+h2
+	font-size: em(35px)
+
+h1
+	font-size: em(60px)
+
+h3
+	font-size: em(28px)
+
+p
+	font-family: "OpenSans"
+
+h1
+	font-family: "Aniron"
+
+
+.hidden
+	display: none
+
+
+.main_header
+	width: 100%
+	position: relative
+	padding-top: 150px
+	padding-bottom: 130px
+	z-index: 10
+
+.main_header
+	min-height: 600px
+	background: radial-gradient(#203d50, #1c150f)
+    background: -webkit-radial-gradient(#203d50, #1c150f)
+    // background-image: url(../img/bg.png)
+
+// main
+// 	height: 2000px
+// 	background-color: #000
+// .main_header
+// 	background-image: url(../img/bg.png)
+// 	background-repeat: no-repeat
+// 	background-size: cover
+
+main
+	height: 2000px
+	background-color: red
+	
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: 2px solid #fff
+	right: 20px
+	top: 50px
+	background-color: $main_color
+	outline: none
+	span
+		display: block
+
+
+
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: #fff
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+	// transition-delay: 0.2s, 0s
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: #fff
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: #fff
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.55)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 130px
+		text-align: center
+		+animation-duration(.01s)
+		li
+			&:nth-child(1) a
+				+animation-delay(0)
+			&:nth-child(2) a
+				+animation-delay(.1s)
+			&:nth-child(3) a
+				+animation-delay(.2s)
+			&:nth-child(4) a
+				+animation-delay(.3s)
+			&:nth-child(5) a
+				+animation-delay(.4s)
+			&:nth-child(6) a
+				+animation-delay(.5s)
+			&:nth-child(7) a
+				+animation-delay(.6s)	
+			&:nth-child(8) a
+				+animation-delay(.7s)					
+		a
+			color: #fff
+			display: block
+			text-transform: uppercase
+			font-size: 12px
+			font-family: "OpenSans"
+			opacity: 1
+			position: relative
+			height: 60px
+			outline: none
+			letter-spacing: 2px
+		a:hover
+			color: $silver
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				+transition(all 0.5s ease)
+				&:hover
+					background-color: rgba(255,255,255,.08)
+
+
+
+
+.silver_tatosh
+	text-align: center
+	position: relative
+	
+	h1
+		font-size: em(76px)
+		font-weight: 600
+		color: #fff
+		text-transform: uppercase
+		overflow: hidden
+
+.logo
+	text-align: right
+
+.buy-tickets
+	text-align: center
+	margin-top: 44px
+
+.buttom_a
+	font-size: em(14px)
+	font-family: "Arkhir"
+	text-transform: uppercase
+	background-color: rgb(251, 56, 60)
+	padding: 22px 50px 19px 50px
+	color: #fff
+	letter-spacing: 1px
+	border-radius: 3px
+	text-decoration: none
+	transition: 0.2s
+	&:hover
+		box-shadow: 0 -3px #1c150f inset
+		transition: 0.2s
+	&:active
+		opacity: .8
+
+
+section
+	width: 100%
+	height: auto
+	overflow: hidden
+
+#fest
+	background-color: $silver_bg
+	padding-top: 50px
+	img
+		min-width: 100%
+		height: 100%
+	p
+		font-family: "OpenSans"
+		font-size: em(30px)
+		padding-top: 75px
+		line-height: 40px
+	h2
+		text-transform: uppercase
+		text-align: right
+
+.fix-width
+	max-width: 1400px
+
+
+.header_content
+	max-width: 1400px
+	height: auto
+	margin: 0 auto
+
+
+.section_content
+	max-width: 1400px
+	height: auto
+	margin: 0 auto
+
+#links
+	background-color: #d1cfcf
+	// padding: 41px 0
+
+.link
+	text-align: center
+	list-style-type: none
+	padding: 0
+	margin: 0
+	width: 100%
+	height: auto
+	li
+		display: inline-block
+		padding: 41px 80px
+	img
+		width: auto
+		height: auto
+		vertical-align: middle
+		display: inline-block
+	span
+		display: block
+		font-family: "Arkhir"
+		color: #1e3947
+		vertical-align: middle
+		font-size: em(63px)
+		padding-top: 30px
+		margin: 0
+		line-height: 35px
+		&:last-child
+			font-size: em(24px)
+			font-weight: 400
+			padding: 0
+			letter-spacing: -1px
+		
+
+#history_tatosh
+	background-color: $main_color
+	padding: 20px 0 85px 0
+.history_header
+	text-align: center
+	h2
+		text-transform: uppercase
+		font-family: "Arkhir"
+		font-size: em(37px)
+		color: #fff
+		padding: 25px 0
+		letter-spacing: 2px
+		font-weight: 400
+	p
+		font-family: "OpenSans"
+		font-size: em(18px)
+		color: $silver
+		display: inline-block
+		width: 60%
+		height: auto
+		margin: 0 auto
+		text-align: left
+
+
+.history_container
+	padding-top: 50px
+	color: #fff
+	.left
+		text-align: right
+		border-right: #303f47 2px solid
+		padding-right: 90px
+		.ping
+			right: -108px
+
+		
+	.right
+		text-align: left
+		// border-left: #303f47 2px solid
+		padding-left: 90px
+		span
+			// padding-left: 50px
+		
+.history_item
+	position: relative
+	p
+		font-family: "OpenSans"
+		font-size: em(24px)
+		letter-spacing: 0
+		padding: 75px 0 75px 0
+		color: $silver
+
+	
+.left
+	.history_item
+		&:first-child p
+			margin-top: 0
+		p
+			margin-top: 100px
+
+.right
+	.history_item
+		&:first-child p
+			margin-top: 0
+		p
+			margin-top: 100px
+
+.history_icon
+	// text-align: center
+	// padding-right: 90px
+	position: relative
+	display: inline-block
+	text-align: center
+	a
+		text-align: center
+	img
+		width: 100%
+		height: auto
+		display: inline-block
+	span
+		display: block
+		font-size: em(60px)
+		font-family: "Arkhir"
+		text-transform: uppercase
+		// line-height: 160px
+		padding-top: 40px
+
+
+.non_pic
+	margin-top: 100px
+
+.ping
+	position: absolute
+	left: -108px
+	top: 50%
+	transform: translateY(-50%)
+	display: inline-block
+	img
+		// width: 100%
+		height: auto 
+
+// .ping_text
+// 	right: -108px
+
+.z_index
+	z-index: -10
+	opacity: 0
+
+.memory
+	width: 100%
+	height: auto
+	text-align: center
+	margin: 0 auto 150px
+	a
+		background-color: #fff
+		color: #000
+		font-size: em(15px)
+		font-family: "Arkhir"
+		padding: 22px 35px 19px 35px
+
+
+
+
+#home_tatosh
+	background-color: $silver_bg
+	width: 100%
+	height: auto
+	h2
+		font-size: em(35px)
+		text-align: center
+		padding: 50px 0
+	p
+		font-size: em(30px)
+
+
+.castle
+	width: 100%
+	height: auto
+	img
+		width: 100%
+		height: auto
+
+
+
+
+// custom
+#shedule_fastival
+	#portfolio_grid
+		overflow: hidden
+
+#shedule_fastival
+	background-color: $silver_bg
+	h2
+		font-size: em(35px)
+		text-align: center
+		padding: 50px 0
+
+
+
+.portfolio_item
+	padding: 0
+	margin: 0
+	border: 2px solid #fff
+	img
+		width: 100%
+		vertical-align: middle
+	&:hover .port_item
+		opacity: 1
+		padding: 25px 0
+.port_item
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: auto
+	background-color: $silver_bg
+	text-align: center
+	// padding-bottom: 110px
+	opacity: 0
+	-webkit-transition: all 0.6s
+	transition: all 0.6s
+	>h3
+		display: inline-block
+		color: $main_color
+		margin-bottom: 0
+		font-size: em(28px)
+	a
+		background-color: transparent
+		line-height: 35px
+		display: inline-block
+		text-decoration: none
+		outline: none
+		color: $main_color
+
+.port_descr
+	background-color: transparent
+	max-width: 800px
+	margin: 0 auto
+	p,
+	h3
+		padding-bottom: 0
+		text-align: left
+		padding: 15px 25px 0 25px
+	h3
+		font-family: "GothamLight"
+		color: #fff
+		margin-bottom: 0
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: 20px
+	p
+		margin-top: 0
+		color: #fff
+		font-family: "GothamLight"
+		font-weight: 500
+	img
+		width: 100%
+		margin-top: 20px
+
+.mfp-close-btn-in 
+	.mfp-close
+		color: #fb383c
+
+.modal-box-content
+	position: relative
+	background-color: transparent
+
+
+
 
