@@ -30,7 +30,7 @@ gulp.task("scripts", function(){
 		"app/libs/animated/animated.js",
 		"app/libs/respond/dest/respond.min.js",
 		"app/libs/scroll2id/PageScroll2id.min.js",
-		"app/libs/owl.carousel/dist/owl.carousel.min.js",
+		"app/libs/owl.carousel.2.0.0/owl.carousel.min.js",
 		"app/libs/parallax.js/parallax.min.js",
 		])
 	.pipe(concat("libs.min.js"))

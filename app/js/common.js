@@ -42,6 +42,24 @@ $(document).ready(function() {
 
 
 });
+
+// $(document).ready(function() {
+ 
+//   var owl = $(".owl-carousel");
+ 
+//   owl.owlCarousel();
+ 
+//   // Custom Navigation Events
+//   $(".next").click(function(){
+//     owl.trigger('owl.next');
+//   })
+//   $(".prev").click(function(){
+//     owl.trigger('owl.prev');
+//   })
+ 
+// });
+
+
 $(window).load(function() {
 
 	$(".loader_inner").fadeOut();
@@ -51,3 +69,20 @@ $(window).load(function() {
 	// $(".top_text p").animated("fadeInUp", "fadeOutDown");
 
 }); 
+
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+	autoplay: true,
+	loop:true,
+  	nav:true,
+  	navText: ["<img src='../img/prev.png'>","<img src='../img/next.png'>"],
+	dots: true,
+	items: 1,
+	// singleItem: true,
+	autoplayTimeout:6000,
+	mouseDrag: true,
+	touchDrag: true,
+	navSpeed: 700,
+  });
+
+  });
