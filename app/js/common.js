@@ -72,7 +72,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
-	autoplay: true,
+	// autoplay: true,
 	loop:true,
   	nav:true,
   	navText: ["<img src='../img/prev.png'>","<img src='../img/next.png'>"],

@@ -11,6 +11,17 @@ body {
   line-height: 1.42857;
   -webkit-font-smoothing: antialised; }
 
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #52a028;
+  outline: none;
+  border: 1px solid #52a028; }
+
+body input:required:valid,
+body textarea:required:valid {
+  outline: none;
+  border: 1px solid #52a028; }
+
 h2, h3, h4, h5 {
   font-family: "Arkhir"; }
 
@@ -367,6 +378,29 @@ section {
 .right .history_item p {
   margin-top: 100px; }
 
+.gallery_btn {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 150px; }
+  .gallery_btn a {
+    font-size: 1.5em;
+    font-family: "Arkhir";
+    color: #fff;
+    padding: 25px 100px;
+    background: -webkit-radial-gradient(#6a757b, #3e4c54);
+    background: radial-gradient(#6a757b, #3e4c54);
+    background-color: #6a757b;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    letter-spacing: 2.5px;
+    -webkit-transition: .8s;
+    transition: .8s; }
+    .gallery_btn a:hover {
+      opacity: 0.7;
+      -webkit-transition: 1s;
+      transition: 1s; }
+
 .history_icon {
   position: relative;
   display: inline-block;
@@ -589,7 +623,7 @@ section {
   padding-bottom: 27px;
   background-image: url(../img/knight_tickets.png);
   background-repeat: no-repeat;
-  background-position-x: -120px; }
+  background-position: -120px	0; }
 
 #tickets {
   background: -webkit-radial-gradient(#dae8f0, #f0efef);
@@ -653,7 +687,10 @@ section {
     font-weight: 300; }
 
 .owl-carousel {
-  height: auto; }
+  height: auto;
+  border: 2px solid #e0e0e0;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
   .owl-carousel .owl-stage-outer {
     z-index: 1000; }
 
@@ -778,3 +815,119 @@ section {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d; }
+
+#news_festival .carousel_tags {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "OpenSans"; }
+  #news_festival .carousel_tags h2 {
+    padding: 0;
+    text-align: left;
+    font-size: 1.875em; }
+  #news_festival .carousel_tags p {
+    font-size: 1.125em;
+    color: #737e85; }
+
+#li_tatosh {
+  padding: 50px 0;
+  background-color: #e9e9e9; }
+  #li_tatosh h2 {
+    color: #182932;
+    font-size: 2.1875em;
+    text-align: center; }
+  #li_tatosh img {
+    width: 100%;
+    height: auto;
+    text-align: center; }
+
+#mail_tatosh {
+  background-image: url(../img/mail_bg.png);
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0; }
+  #mail_tatosh h2 {
+    font-size: 4.0625em;
+    color: #eff9ff;
+    letter-spacing: 1.8px;
+    text-align: center;
+    font-weight: 300; }
+
+.main_form {
+  text-align: center;
+  margin-top: 40px; }
+  .main_form button {
+    font-size: 1.5em;
+    font-family: "Arkhir";
+    color: #fff;
+    padding: 25px 100px;
+    background-color: #6a757b;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    letter-spacing: 2.5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border: 1px solid #295b75;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6a757b), to(#3e4c54));
+    background-image: -webkit-linear-gradient(top, #6a757b, #3e4c54);
+    background-image: linear-gradient(to bottom, #6a757b, #3e4c54);
+    outline: none; }
+    .main_form button:hover {
+      -webkit-box-shadow: 0 -3px #1a2b34 inset;
+              box-shadow: 0 -3px #1a2b34 inset;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+    .main_form button:active {
+      opacity: .8; }
+
+.error {
+  margin-top: 10px; }
+
+.form-group {
+  display: block;
+  margin-bottom: 25px; }
+  .form-group .color_element {
+    font-weight: 700;
+    font-size: 18px; }
+  .form-group .text-danger {
+    font-size: 11px;
+    margin-top: 5px;
+    display: block; }
+    .form-group .text-danger ul,
+    .form-group .text-danger li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+  .form-group textarea {
+    min-height: 300px; }
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  min-width: 750px;
+  height: auto;
+  margin: 0 auto 45px;
+  border: 1px solid #828991;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  text-indent: 25px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 1.0625em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "OpenSans";
+  color: #828991;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 5px 5px -5px black;
+          box-shadow: inset 0px 5px 5px -5px black;
+  -webkit-input-placeholder: #8ad159;
+  -moz-placeholder: #8ad159;
+  -moz-placeholder: #8ad159;
+  -ms-input-placeholder: #8ad159; }
