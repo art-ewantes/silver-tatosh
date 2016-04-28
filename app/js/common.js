@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 	
 	$("input, select, textarea").jqBootstrapValidation();
-
+  $(".top_mnu ul a").mPageScroll2id();
 
 	var map;
     var egglabs = new google.maps.LatLng(48.4845798,22.831073);
@@ -150,7 +150,7 @@ $(document).ready(function() {
         },
         600:{
             items:2,
-             stagePadding:130
+             stagePadding:130,
         },
         840:{
          items:1,
@@ -176,3 +176,12 @@ $(document).ready(function() {
   });
 
   });
+$(window).load(function() {
+
+  $(".loader_inner").fadeOut();
+  $(".loader").delay(1000).fadeOut("slow");
+
+  // $(".top_text h1").animated("fadeInDown", "fadeOutUp");
+  // $(".top_text p").animated("fadeInUp", "fadeOutDown");
+
+}); 

@@ -43,6 +43,33 @@ h1 {
 .hidden {
   display: none; }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader_inner {
+    background-image: url(../img/preloader.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-posirion: center center;
+    background-color: #fff;
+    height: 130px;
+    width: 130px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute; }
+
 .main_header {
   width: 100%;
   position: relative;
@@ -717,6 +744,7 @@ section {
     display: inline-block; }
 
 .owl-controls .owl-dots {
+  width: 100%;
   text-align: center;
   bottom: -13%;
   z-index: 1;
@@ -1101,7 +1129,8 @@ footer {
       display: block;
       font-size: 3.75em;
       font-family: "Arkhir";
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-top: 30px; }
 
 .container_text {
   position: relative;
@@ -1113,8 +1142,10 @@ footer {
     font-family: "OpenSans";
     color: #808689;
     margin-right: 15%;
-    margin-left: 15%;
-    margin-top: 100px; }
+    margin-left: 15%; }
+
+.fix_button {
+  visibility: hidden; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -1126,7 +1157,18 @@ footer {
   #fest {
     padding-bottom: 50px; }
   .link li {
-    padding: 41px 50px; } }
+    padding: 41px 50px; }
+  .fixed_col {
+    float: left;
+    width: 100%;
+    border: none; }
+  .history_cont_two .container_text {
+    border: none; }
+  .container_text .cont_text {
+    margin-right: 0;
+    margin-left: 0; }
+  .bg_hidden {
+    background-image: none; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1148,7 +1190,29 @@ footer {
   .left .history_item p {
     margin-top: 0; }
   .fixed_col {
-    float: left; } }
+    float: left;
+    width: 100%;
+    border: none; }
+  .history_cont_two .container_text {
+    border: none; }
+  .container_text .cont_text {
+    margin-right: 0;
+    margin-left: 0; }
+  .port_item {
+    opacity: 1;
+    padding: 25px 0; }
+  .bg_hidden {
+    background-image: none; }
+  .owl-controls .owl-nav {
+    display: none; }
+  .footer_right_top {
+    text-align: center; }
+  .footer_right_cont {
+    text-align: center; }
+  .footer_left {
+    text-align: center; }
+  .footer_left table {
+    margin: 0 auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1161,15 +1225,76 @@ footer {
   #fest h2 {
     font-size: 1.8em; }
   .link li {
-    padding: 41px 20px; } }
+    padding: 41px 20px; }
+  .container_text .cont_text {
+    font-size: 1.275em; }
+  .memory a {
+    font-size: 0.7375em; }
+  .container_img .cont_icon span {
+    font-size: 3.25em; }
+  #program_tatosh table tr {
+    font-size: 1.2375em; }
+  .table_bottom ul li {
+    font-size: 1.2375em; }
+  .form-group input, .form-group textarea {
+    min-width: 600px; } }
 
 @media only screen and (max-width: 680px) {
   .link li {
-    padding: 41px 48px; } }
+    padding: 41px 48px; }
+  .history_header p {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%; }
+  #home_tatosh h2 {
+    font-size: 2.0875em; }
+  #home_tatosh p {
+    font-size: 1.575em; }
+  #shedule_fastival h2 {
+    font-size: 2.0875em; }
+  #tatosh_partners h2 {
+    font-size: 2.0875em; }
+  #program_tatosh h2 {
+    font-size: 2.0875em; }
+  #li_tatosh h2 {
+    font-size: 2.0875em; }
+  #program_tatosh table tr {
+    font-size: 1.2375em; }
+  .table_bottom ul li {
+    font-size: 1.2375em; }
+  .tickets_right {
+    margin-top: 50px; }
+  .tickets_left {
+    margin-top: 50px; }
+  .owl-controls .owl-dots, .owl-controls .owl-pagination {
+    margin-bottom: -20px; }
+  #mail_tatosh h2 {
+    font-size: 3.0625em; }
+  .form-group input, .form-group textarea {
+    min-width: 450px; }
+  .main_form button {
+    font-size: 1em;
+    padding: 25px 43px; } }
 
 @media only screen and (max-width: 520px) {
   .silver_tatosh h1 {
-    font-size: 3em; } }
+    font-size: 3em; }
+  .container_text .cont_text {
+    font-size: 1.175em; }
+  .gallery_btn a {
+    padding: 25px 50px;
+    font-size: 0.8em;
+    text-transform: uppercase; }
+  #home_tatosh p {
+    font-size: 1.475em; }
+  #shedule_fastival h2 {
+    font-size: 1.9875em; }
+  #tatosh_partners h2 {
+    font-size: 1.9875em; }
+  .download span {
+    font-size: 1.675em; }
+  .footer_left span {
+    font-size: 1.05em; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1178,7 +1303,23 @@ footer {
   #fest p {
     font-size: 1.3em; }
   .link li {
-    padding: 41px 30px; } }
+    padding: 41px 30px; }
+  .container_img .cont_icon span {
+    font-size: 3.05em; }
+  #home_tatosh p {
+    font-size: 1.375em; }
+  #shedule_fastival h2 {
+    font-size: 1.7875em; }
+  #li_tatosh h2 {
+    font-size: 1.7875em; }
+  #tatosh_partners h2 {
+    font-size: 1.7875em; }
+  #program_tatosh table tr {
+    font-size: 1.1375em; }
+  .table_bottom ul li {
+    font-size: 1.1375em; }
+  .form-group input, .form-group textarea {
+    min-width: 350px; } }
 
 @media only screen and (max-width: 420px) {
   .silver_tatosh h1 {
@@ -1188,7 +1329,12 @@ footer {
   .buy-tickets {
     margin-top: 55px; }
   .link li {
-    padding: 41px 44px; } }
+    padding: 41px 44px; }
+  #home_tatosh p {
+    font-size: 1.375em; }
+  .main_form button {
+    font-size: 1em;
+    padding: 25px 43px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 380px) {
@@ -1197,7 +1343,13 @@ footer {
   .main_header {
     padding-top: 10%; }
   .buy-tickets {
-    margin-top: 55px; } }
+    margin-top: 55px; }
+  #home_tatosh p {
+    font-size: 1.275em; }
+  .buttom_a {
+    font-size: 0.675em; }
+  .form-group input, .form-group textarea {
+    min-width: 300px; } }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

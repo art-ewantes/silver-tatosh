@@ -14,7 +14,21 @@
 	.link li{
 		padding: 41px 50px;
 	}
-
+	.fixed_col{
+		float: left;
+		width: 100%;
+		border: none;
+	}
+	.history_cont_two .container_text{
+		border: none;
+	}
+	.container_text .cont_text{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.bg_hidden{
+		background-image: none;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -45,9 +59,41 @@
 	}
 	.fixed_col{
 		float: left;
+		width: 100%;
+		border: none;
+	}
+	.history_cont_two .container_text{
+		border: none;
+	}
+	.container_text .cont_text{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.port_item{
+		opacity: 1;
+		padding: 25px 0;
+	}
+	.bg_hidden{
+		background-image: none;
+	}
+	.owl-controls .owl-nav{
+		display: none;
+	}
+	.footer_right_top{
+		text-align: center;
 		
 	}
-
+	.footer_right_cont{
+		text-align: center;
+		
+	}
+	.footer_left{
+		text-align: center;
+		
+	}
+	.footer_left table{
+		margin: 0 auto;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -67,6 +113,27 @@
 	.link li{
 		padding: 41px 20px;
 	}
+	.container_text .cont_text{
+		font-size: 1.275em;
+	}
+	.memory a{
+		font-size: 0.7375em;
+	}
+	.container_img .cont_icon span{
+		font-size: 3.25em;
+	}
+	#program_tatosh table tr{
+		font-size: 1.2375em;
+	}
+	.table_bottom ul li{
+		font-size: 1.2375em;
+	}
+	.form-group input, .form-group textarea{
+		min-width: 600px;
+	}
+
+
+
 }
 
 @media only screen and (max-width : 680px){
@@ -74,7 +141,54 @@
 	.link li{
 		padding: 41px 48px;
 	}
-
+	.history_header p{
+		width: 100%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	#home_tatosh h2{
+		font-size: 2.0875em;
+	}
+	#home_tatosh p{
+		font-size: 1.575em;
+	}
+	#shedule_fastival h2{
+		font-size: 2.0875em;
+	}
+	#tatosh_partners h2{
+		font-size: 2.0875em;
+	}
+	#program_tatosh h2{
+		font-size: 2.0875em;
+	}
+	#li_tatosh h2{
+		font-size: 2.0875em;
+	}
+	#program_tatosh table tr{
+		font-size: 1.2375em;
+	}
+	.table_bottom ul li{
+		font-size: 1.2375em;
+	}
+	.tickets_right{
+		margin-top: 50px;
+	}
+	.tickets_left{
+		margin-top: 50px;
+	}
+	.owl-controls .owl-dots, .owl-controls .owl-pagination{
+		margin-bottom: -20px;
+	}
+	#mail_tatosh h2{
+		font-size: 3.0625em;
+	}
+	.form-group input, .form-group textarea{
+		min-width: 450px;
+	}
+	.main_form button{
+		font-size: 1em;
+		padding: 25px 43px;
+	}
 
 }
 
@@ -82,8 +196,29 @@
 	.silver_tatosh h1{
 		font-size: 3em;
 	}
-	
-
+	.container_text .cont_text{
+		font-size: 1.175em;
+	}
+	.gallery_btn a{
+		padding: 25px 50px;
+		font-size: 0.8em;
+		text-transform: uppercase;
+	}
+	#home_tatosh p{
+		font-size: 1.475em;
+	}
+	#shedule_fastival h2{
+		font-size: 1.9875em;
+	}
+	#tatosh_partners h2{
+		font-size: 1.9875em;
+	}
+	.download span{
+		font-size: 1.675em;
+	}
+	.footer_left span{
+		font-size: 1.05em;
+	}
 
 }
 /* Extra Small Devices, Phones */
@@ -96,6 +231,30 @@
 	}
 	.link li{
 		padding: 41px 30px;
+	}
+	.container_img .cont_icon span{
+		font-size: 3.05em;
+	}
+	#home_tatosh p{
+		font-size: 1.375em;
+	}
+	#shedule_fastival h2{
+		font-size: 1.7875em;
+	}
+	#li_tatosh h2{
+		font-size: 1.7875em;
+	}
+	#tatosh_partners h2{
+		font-size: 1.7875em;
+	}
+	#program_tatosh table tr{
+		font-size: 1.1375em;
+	}
+	.table_bottom ul li{
+		font-size: 1.1375em;
+	}
+	.form-group input, .form-group textarea{
+		min-width: 350px;
 	}
 }
 
@@ -112,7 +271,13 @@
 	.link li{
 		padding: 41px 44px;
 	}
-
+	#home_tatosh p{
+		font-size: 1.375em;
+	}
+	.main_form button{
+		font-size: 1em;
+		padding: 25px 43px;
+	}
 }
 
 
@@ -127,6 +292,16 @@
 	.buy-tickets{
 		margin-top: 55px
 	}
+	#home_tatosh p{
+		font-size: 1.275em;
+	}
+	.buttom_a{
+		font-size: 0.675em;
+	}
+	.form-group input, .form-group textarea{
+		min-width: 300px;
+	}
+
 }
 
 
