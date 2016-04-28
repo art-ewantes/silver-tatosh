@@ -11,6 +11,12 @@
   src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "OpenSansC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
+
+@font-face {
   font-family: "Arkhir";
   font-style: normal;
   font-weight: normal;

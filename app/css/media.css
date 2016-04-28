@@ -1,0 +1,158 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.silver_tatosh h1{
+		font-size: 4.45em;
+	}
+	#fest h2{
+		text-align: center;
+	}
+	#fest{
+		padding-bottom: 50px;
+	}
+	.link li{
+		padding: 41px 50px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo{
+		text-align: center
+	}
+	.main_header{
+		padding-top: 2%;
+	}
+	#fest h2{
+		text-align: center;
+	}
+	.link li{
+		padding: 41px 28px;
+	}
+	.history_container .left{
+		border: none;
+		text-align: center;
+		padding-right: 0;
+	}
+	.history_container .right{
+		text-align: center;
+		padding-left: 0;
+	}
+	.left .history_item p{
+		margin-top: 0;
+	}
+	.fixed_col{
+		float: left;
+		
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.silver_tatosh h1{
+		font-size: 4em;
+	}
+	.top_mnu ul{
+		margin-top: 80px
+	}
+	#fest p{
+		font-size: 1.6em
+	}
+	#fest h2{
+		font-size: 1.8em;
+	}
+	.link li{
+		padding: 41px 20px;
+	}
+}
+
+@media only screen and (max-width : 680px){
+
+	.link li{
+		padding: 41px 48px;
+	}
+
+
+}
+
+@media only screen and (max-width : 520px){
+	.silver_tatosh h1{
+		font-size: 3em;
+	}
+	
+
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.silver_tatosh h1{
+		font-size: 2.8em;
+	}
+	#fest p{
+		font-size: 1.3em
+	}
+	.link li{
+		padding: 41px 30px;
+	}
+}
+
+@media only screen and (max-width : 420px) {
+	.silver_tatosh h1{
+		font-size: 2.4em;
+	}
+	.main_header{
+		padding-top: 10%;
+	}
+	.buy-tickets{
+		margin-top: 55px
+	}
+	.link li{
+		padding: 41px 44px;
+	}
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px) {
+	.silver_tatosh h1{
+		font-size: 2.2em;
+	}
+	.main_header{
+		padding-top: 10%;
+	}
+	.buy-tickets{
+		margin-top: 55px
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

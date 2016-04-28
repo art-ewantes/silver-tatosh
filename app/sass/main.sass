@@ -291,6 +291,7 @@ section
 	h2
 		text-transform: uppercase
 		text-align: right
+		font-size: em(35px)
 
 .fix-width
 	max-width: 1400px
@@ -459,7 +460,8 @@ section
 
 .ping
 	position: absolute
-	left: -108px
+	// left: -108px
+	right: -16px
 	top: 50%
 	transform: translateY(-50%)
 	display: inline-block
@@ -468,7 +470,7 @@ section
 		height: auto 
 
 // .ping_text
-// 	right: -108px
+// 	right: 108px
 
 .z_index
 	z-index: -10
@@ -478,7 +480,9 @@ section
 	width: 100%
 	height: auto
 	text-align: center
-	margin: 0 auto 150px
+	margin: 60px auto 150px 0
+	// position: absolute
+	
 	a
 		background-color: #fff
 		color: #000
@@ -976,7 +980,7 @@ section
 	margin-top: 40px
 	button
 		font-size: em(24px)
-		font-family: "Arkhir"
+		font-family: "OpenSansC"
 		color: #fff
 		padding: 25px 100px
 		// background: radial-gradient(#6a757b, #3e4c54)
@@ -999,7 +1003,7 @@ section
 
 
 .error
-	margin-top: 10px
+	// margin-top: 10px
 
 
 // .form-group
@@ -1013,16 +1017,17 @@ section
 		font-weight: 700
 		font-size: 18px
 	.text-danger
-		font-size: 11px
-		margin-top: 5px
+		font-size: em(14px)
 		display: block
+		color: #fff
+		font-family: "OpenSansC"
 		ul,
 		li
 			margin: 0
 			padding: 0
 			list-style-type: none
 	textarea
-		min-height: 300px	
+		min-height: 180px	
 
 
 
@@ -1034,7 +1039,7 @@ section
 		min-width: 750px
 		height: auto
 		// margin-top: 5px
-		margin: 0 auto 45px
+		margin: 0 auto 20px
 		border: 1px solid #828991
 		border-radius: 12px
 		text-indent: 25px
@@ -1043,17 +1048,232 @@ section
 		font-size: em(17px)
 		letter-spacing: 1px
 		font-weight: 700
-		font-family: "OpenSans"
+		font-family: "OpenSansC"
 		color: #828991
 		background-color: transparent
 		// opacity: .8
 		box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 1) 
 		+placeholder(#8ad159)
 
+#tatosh_partners
+	background-color: #e9e9e9
+	padding: 40px 0
+	h2
+		font-size: em(35px)
+		letter-spacing: 2px
+		text-align: center
+		padding-bottom: 30px
+		color: $main_color
+		
+
+.owl-carousel-partners
+	border: 2px solid #e9e9e9
+	.owl-item
+		text-align: center
+		img
+			text-align: center
+			width: 100%
+	.owl-controls
+		display: none
+
+
+.overlay
+	width: 100%
+	min-height: 200px
+	background-position: center
+	position: absolute
+	z-index: 5
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: #17456c
+		opacity: 0.55
+
+.footer-maps 
+	span
+		position: absolute
+		font-size: 14px
+		font-family: "OpenSans"
+		color: #fff
+		top: 50%
+		transform: translateY(-50%)
+		left: 11%
+
+#map-canvas
+	width: 100%
+	min-height: 200px
+
+
+footer
+	width: 100%
+	height: auto
+	overflow: hidden
+	background-color: $main_color
+	padding-bottom: 18px
+	h3
+		font-family: "OpenSans"
+		text-align: center
+		font-size: em(20px)
+		letter-spacing: 1.5px
+		color: #e8ebef
+		font-weight: normal
+
+
+.footer_left
+	text-align: left
+	width: 100%
+	height: auto
+	color: #e8ebef
+
+	th
+		text-align: center
+		padding-top: 30px
+	tr
+
+	img
+		display: inline-block
+		vertical-align: middle
+		font-size: em(20px)
+		padding-right: 20px
+
+	span
+		display: inline-block
+		vertical-align: middle	
+		font-size: em(20px)
+		letter-spacing: 1.5px
+		font-weight: 300
+		font-family: "OpenSans"
+	.phone
+		// padding-left: 10px
+		text-align: left
+
+.footer_right_top
+	text-align: right
+	padding-top: 17px
+	img
+		display: inline-block
+		vertical-align: middle
+		// padding-right: 20px
+		// max-width: 100%
+		// height: 100%
+
+	span
+		display: inline-block
+		vertical-align: middle	
+		font-size: em(21px)
+		letter-spacing: 1.5px
+		font-weight: 300
+		font-family: "OpenSansC"
+		color: #e8ebef
 
 
 
 
+
+.footer_left, .footer_right
+	padding: 20px 0
+
+.fixed
+	padding-top: 30px
+
+
+
+.footer_right_cont
+	color: $main_color
+	font-size: em(35px)
+	text-align: right
+	margin-top: 36px
+	a
+		color: $main_color
+	
+	.facebook, .vk
+		width: 50px
+		height: 50px
+		display: inline-block
+		border-radius: 50%
+		background-color: #7b8589
+		text-align: center
+		line-height: 46px
+		opacity: 1
+		transition: .8s
+
+		&:hover
+			opacity: 0.8
+
+
+.fixed_col
+	padding: 0
+	margin: 0
+	float: none
+	padding-top: 70px
+
+
+.history_cont
+	display: table
+	width: 100%
+	height: auto
+
+
+.history_cont_two
+	display: table
+	width: 100%
+	height: auto
+	.container_img
+		border: none
+		text-align: center
+	.container_text
+		border-right: 2px solid #303f47
+
+.container_img
+	border-right: 2px solid #303f47
+	height: 100%
+	position: relative
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+	
+	.cont_icon
+		margin-right: 20%
+		margin-left: 20%
+
+		img
+			max-width: 100%
+			height: auto
+			display: inline-block
+		span
+			display: block
+			font-size: em(60px)
+			font-family: "Arkhir"
+			text-transform: uppercase
+			// line-height: 160px
+			// padding-top: 40px
+
+
+.container_text
+	position: relative
+	height: auto
+	text-align: left
+	display: table-cell
+	.cont_text
+		// padding-top: 100px
+		// position: absolute
+		// top: 0
+		// transform: translateY(50%)
+		font-size: em(22px)
+		font-family: "OpenSans"
+		color: #808689
+		margin-right: 15%
+		margin-left: 15%
+		margin-top: 100px
+
+
+
+
+@import "../css/media"
 
 
 
