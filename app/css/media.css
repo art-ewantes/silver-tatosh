@@ -94,6 +94,37 @@
 	.footer_left table{
 		margin: 0 auto;
 	}
+	header .silver_tatosh h1 {
+    font-size: 29.21px;
+  }
+header .logo img {
+    height: 137px;
+  }
+  header{
+  	height: 166px;
+  }
+  header .fa-home {
+
+    font-size: 2.5em;
+  }
+ .content.all_news .last_date {
+    padding-top: 0%;
+}
+.content.all_news h2 {
+    font-size: 2.5em;
+    }
+    .content.all_news .cell p {
+    font-size: 0.85em;
+  }
+  .content.all_news .last_news .news_title {
+
+    font-size: 18px;
+  }
+  .content.all_news .mini_article p {
+    font-size: 11px;
+    max-height: 67px;
+    padding-top: 17px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -130,6 +161,34 @@
 	}
 	.form-group input, .form-group textarea{
 		min-width: 600px;
+	}
+	header .silver_tatosh h1 {
+	font-size: 22.21px;
+	}
+	header{
+		height: 143px;
+	}
+	.content.all_news h2 {
+	    font-size: 1.5em;
+	}
+	.content.all_news .last_news .news_title {
+		position: relative;
+		left: 0;
+		bottom: 0;
+	}
+	.content.all_news .cont_for_news {
+	    margin-top: 33px;
+    }
+    .content.all_news .mini_title h4 {
+	    font-size: 18px;
+    }
+	.num_ul li {
+		margin-left: 2%;
+  	}
+
+	.content.one_news h3 {
+		font-size: 1.5em;
+		width: 100%;
 	}
 
 
