@@ -33,6 +33,7 @@ gulp.task("scripts", function(){
 		"app/libs/owl.carousel.2.0.0/owl.carousel.min.js",
 		"app/libs/parallax.js/parallax.min.js",
 		"app/libs/bootstrapvalidator/dist/js/jqBootstrapValidation.js",
+		"app/libs/google-maps/google.js",
 		])
 	.pipe(concat("libs.min.js"))
 	.pipe(uglify())
