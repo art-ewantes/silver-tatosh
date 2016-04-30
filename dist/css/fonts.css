@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Aniron";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/aniron/anir.eot?#iefix") format("embedded-opentype"), url("../fonts/aniron/anir.woff") format("woff"), url("../fonts/aniron/anir.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arkhir";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Arkhir/Arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/Arkhir/Arkhip.woff") format("woff"), url("../fonts/Arkhir/Arkhip.ttf") format("truetype"); }
